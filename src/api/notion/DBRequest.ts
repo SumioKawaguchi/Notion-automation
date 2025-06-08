@@ -10,6 +10,7 @@ export const getDatabaseData = async (
       database_id: databaseId,
       filter: {
         or: [
+          // 動的にしても良さそう
           {
             property: "ステータス",
             status: { equals: "完了" },
@@ -17,6 +18,10 @@ export const getDatabaseData = async (
           {
             property: "ステータス",
             status: { equals: "進行中" },
+          },
+          {
+            property: "ステータス",
+            status: { equals: "レビュー依頼中" },
           },
         ],
       },
