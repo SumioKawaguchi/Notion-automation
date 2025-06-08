@@ -16,7 +16,7 @@ import {
 
 const main = async () => {
   try {
-    const startTIme = performance.now();
+    const startTime = performance.now();
     const tasksRes = await getDatabaseData(taskDBId);
     const members = new Members(tasksRes);
     const createPageRes = await createDocument(members);
@@ -35,7 +35,7 @@ const main = async () => {
 
     console.info(
       `Document created successfully in ${(
-        (endTIme - startTIme) /
+        (endTIme - startTime) /
         1000
       ).toFixed(2)} seconds`
     );

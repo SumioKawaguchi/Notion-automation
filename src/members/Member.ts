@@ -60,8 +60,7 @@ export class Member {
         let status = "";
         const statusProp = properties["ステータス"];
         if (statusProp && statusProp.type === "status" && statusProp.status) {
-          status = statusProp.status.name
-          console.log(status)
+          status = statusProp.status.name;
         }
         if (!isStatusType(status)) {
           throw new Error(`Invalid status "${status}" for task "${title}"..`);
