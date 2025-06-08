@@ -1,5 +1,5 @@
 import { BlockObjectResponse, PageObjectResponse } from "@notionhq/client";
-import { MEMBER_IDS, TASK_STATUS } from "./NotionConst";
+import { MEMBER_IDS, TASK_STATUS } from "@/const/NotionConst";
 
 export const isPageObjectResponse = (obj: any): obj is PageObjectResponse =>
   obj && typeof obj === "object" && "object" in obj && obj.object === "page";

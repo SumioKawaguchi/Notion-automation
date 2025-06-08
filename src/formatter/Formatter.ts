@@ -1,5 +1,4 @@
 import {
-  AppendBlockChildrenParameters,
   AppendBlockChildrenResponse,
   BulletedListItemBlockObjectResponse,
 } from "@notionhq/client/build/src/api-endpoints";
@@ -10,7 +9,7 @@ import {
   isStatusType,
   ParentBulletInfoType,
   StatusBulletInfoType,
-} from "../const/Type";
+} from "@/const/Type";
 
 export const formatParentBullets = (
   bullets: BulletedListItemBlockObjectResponse[]

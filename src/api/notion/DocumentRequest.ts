@@ -1,18 +1,17 @@
 import {
   AppendBlockChildrenResponse,
   BlockObjectRequest,
-  BulletedListItemBlockObjectResponse,
 } from "@notionhq/client/build/src/api-endpoints";
-import { notion, TASK_STATUS } from "../../const/NotionConst";
-import { Members } from "../../members/Member";
+import { notion, TASK_STATUS } from "@/const/NotionConst";
+import { Members } from "@/members/Member";
 import {
   getListParents,
   getOpeningDate,
   getStatusBullet,
   getTaskBlocks,
   getTitle,
-} from "../../views/Document";
-import { ParentBulletInfoType, StatusBulletInfoType } from "../../const/Type";
+} from "@/views/Document";
+import { ParentBulletInfoType, StatusBulletInfoType } from "@/const/Type";
 
 export const createDocument = async (members: Members) => {
   try {

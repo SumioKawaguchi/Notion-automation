@@ -1,15 +1,11 @@
-import {
-  PageObjectResponse,
-  QueryDatabaseResponse,
-} from "@notionhq/client/build/src/api-endpoints";
+import { PageObjectResponse } from "@notionhq/client/build/src/api-endpoints";
 import {
   isMemberNameType,
-  isPageObjectResponse,
   isStatusType,
   MemberNameType,
   StatusType,
-} from "../const/Type";
-import { MEMBER_IDS } from "../const/NotionConst";
+} from "@/const/Type";
+import { MEMBER_IDS } from "@/const/NotionConst";
 
 type TaskType = {
   title: string;

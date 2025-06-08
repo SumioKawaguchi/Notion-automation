@@ -1,19 +1,18 @@
 import { PageObjectResponse } from "@notionhq/client";
-import { getDatabaseData } from "./api/notion/DBRequest";
+import { getDatabaseData } from "@/api/notion/DBRequest";
 import {
   appendStatusBullets,
   appendTasks,
   createDocument,
   getBlockList,
-} from "./api/notion/DocumentRequest";
-import { MEMBER_IDS } from "./const/NotionConst";
-import { taskDBId } from "./const/NotionConst";
-import { Member, Members } from "./members/Member";
-import { isBlockObjectResponse, isBulletedListItem } from "./const/Type";
+} from "@/api/notion/DocumentRequest";
+import { taskDBId } from "@/const/NotionConst";
+import { Members } from "@/members/Member";
+import { isBlockObjectResponse, isBulletedListItem } from "@/const/Type";
 import {
   formatParentBullets,
   formatStatusBullets,
-} from "./formatter/Formatter";
+} from "@/formatter/Formatter";
 
 const main = async () => {
   try {

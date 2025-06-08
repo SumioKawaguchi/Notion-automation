@@ -1,9 +1,6 @@
-import {
-  PageObjectResponse,
-  QueryDatabaseResponse,
-} from "@notionhq/client/build/src/api-endpoints";
-import { notion } from "../../const/NotionConst";
-import { isPageObjectResponse } from "../../const/Type";
+import { PageObjectResponse } from "@notionhq/client/build/src/api-endpoints";
+import { notion } from "@/const/NotionConst";
+import { isPageObjectResponse } from "@/const/Type";
 
 export const getDatabaseData = async (
   databaseId: string
