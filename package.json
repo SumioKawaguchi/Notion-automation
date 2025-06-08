@@ -1,0 +1,25 @@
+{
+  "name": "notion-doc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js",
+    "start": "npm run build && node dist/index.js",
+    "get": "npm run build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@notionhq/client": "^3.1.3",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.3",
+    "@types/node": "^22.15.30",
+    "dotenv": "^16.5.0",
+    "esbuild": "^0.25.5",
+    "typescript": "^5.8.3"
+  }
+}
